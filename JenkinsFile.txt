@@ -22,7 +22,7 @@ pipeline {
                 dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Desktop/Jenkins/test.bat'
+                bat 'C:/Jenkins/test.bat'
             }
         }
         stage('Deploy') {
