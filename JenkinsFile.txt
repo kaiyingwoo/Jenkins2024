@@ -11,10 +11,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+                bat 'C:/Jenkins/test.bat'
             }
         }
       stage('Package') {
