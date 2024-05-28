@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-            bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+            bat 'C:/Jenkins/test.bat'
             }
         }
         stage('Test') {
@@ -19,18 +19,18 @@ pipeline {
         }
       stage('Package') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+                bat 'C:/Desktop/Jenkins/test.bat'
             }
         }
         stage('Deploy') {
             steps {
-                dir('C:/Users/user/Desktop/Jenkins/test.bat') {
+                dir('C:/Desktop/Jenkins/test.bat') {
                     /* execute commands in the scripts directory */
                 }
-                bat 'C:/Users/user/Desktop/Jenkins/test.bat'
+                bat 'C:/Desktop/Jenkins/test.bat'
             }
         }
     }
